@@ -1,0 +1,85 @@
+/* Casamentos: mesma identidade, clima mais delicado */
+.pagina-casamentos { --acento-suave: #E9C893; }
+.pagina-casamentos .grao { opacity: .05; }
+.topo--cas { background: linear-gradient(to bottom, rgb(14 13 11 / .75), rgb(14 13 11 / 0)); }
+
+/* Hero: foto à direita, texto à esquerda */
+.cas-hero { position: relative; min-height: 100vh; min-height: 100svh; display: grid; grid-template-columns: 1fr 1fr; }
+.cas-hero-foto { position: relative; overflow: hidden; order: 2; }
+.cas-hero-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; animation: respira 18s ease-in-out infinite alternate; }
+.cas-hero-foto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, var(--fundo), rgb(14 13 11 / 0) 30%); }
+@keyframes respira { from { transform: scale(1.02); } to { transform: scale(1.09); } }
+.cas-hero-texto { order: 1; display: flex; flex-direction: column; justify-content: center; padding: calc(var(--topo) + 40px) clamp(24px, 5vw, 80px) 80px var(--gutter); }
+.cas-hero h1 { font-size: clamp(44px, 5vw, 88px); line-height: .98; letter-spacing: -.022em; margin: 0 0 .45em; }
+.cas-hero h1 em { color: var(--acento-suave); }
+@media (max-width: 899px) {
+  .cas-hero { grid-template-columns: 1fr; min-height: 0; }
+  .cas-hero-foto { order: 1; height: 62svh; min-height: 380px; }
+  .cas-hero-foto::after { background: linear-gradient(to top, var(--fundo), rgb(14 13 11 / 0) 40%); }
+  .cas-hero-texto { order: 2; padding: 8px var(--gutter) 64px; margin-top: -40px; position: relative; }
+  .cas-hero .acoes .botao { width: 100%; }
+}
+
+/* O graveno do casamento */
+.cas-graveno { text-align: left; }
+.cas-manifesto { font: italic 400 clamp(28px, 3.2vw, 52px)/1.2 var(--fonte-titulo); color: var(--texto); max-width: 28ch; }
+.cas-nome { font: italic 400 clamp(72px, 12vw, 200px)/.9 var(--fonte-titulo); color: var(--acento-suave); margin: .2em 0 .1em -.03em; }
+
+/* Filtros e galeria */
+.filtros { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 36px; }
+.filtro { all: unset; cursor: pointer; font: 500 12px/1 var(--fonte-texto); letter-spacing: .2em; text-transform: uppercase; color: var(--texto-suave); padding: 12px 18px; border: 1px solid var(--linha); border-radius: 999px; transition: background .3s, color .3s, border-color .3s; }
+.filtro:hover { border-color: var(--texto-suave); color: var(--texto); }
+.filtro.ativo { background: var(--texto); color: var(--fundo); border-color: var(--texto); }
+.filtro:focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+.galeria-cas { columns: 3 280px; column-gap: 14px; }
+.foto { all: unset; display: block; width: 100%; margin: 0 0 14px; break-inside: avoid; cursor: zoom-in; overflow: hidden; background: var(--fundo-2); }
+.foto img { width: 100%; height: auto; transition: transform 1.2s var(--ease), filter .6s; filter: saturate(.92); }
+.foto:hover img { transform: scale(1.04); filter: none; }
+.foto:focus-visible { outline: 2px solid var(--acento); outline-offset: 3px; }
+.foto[hidden] { display: none; }
+@media (max-width: 600px) { .galeria-cas { columns: 2; column-gap: 8px; } .foto { margin-bottom: 8px; } }
+
+/* Serviços */
+.pagina-casamentos .servico p .cred { display: block; margin: 12px 0 0; color: var(--seg); }
+.pagina-casamentos .servico h3 small { color: var(--acento); }
+
+/* Como funciona */
+.cas-passos { list-style: none; margin: clamp(40px, 6vh, 72px) 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(20px, 2.4vw, 40px); }
+.cas-passos li { border-top: 1px solid var(--linha); padding-top: 22px; }
+.cas-passos .passo-num { display: block; font: 400 clamp(48px, 4.6vw, 76px)/1 var(--fonte-titulo); color: var(--acento-suave); margin-bottom: 14px; }
+.cas-passos h3 { font-size: clamp(26px, 2vw, 34px); margin-bottom: .3em; }
+.cas-passos p { font-size: 16px; margin: 0; }
+@media (max-width: 1000px) { .cas-passos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .cas-passos { grid-template-columns: 1fr; } }
+
+/* Formulário */
+.cas-form-grade { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(32px, 6vw, 100px); align-items: start; }
+.form-cas { grid-template-columns: 1fr 1fr; }
+.form-cas .campo--inteiro, .form-cas .botao, .form-cas .form-status { grid-column: 1 / -1; }
+.check { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--texto); cursor: pointer; margin-top: 4px; }
+.check input { width: 18px; height: 18px; accent-color: var(--acento); margin: 0; }
+.servicos-check { border: 1px solid var(--linha); padding: 16px 18px 18px; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; min-width: 0; }
+.servicos-check legend { font-size: 13px; letter-spacing: .04em; color: var(--texto-suave); padding: 0 6px; }
+@media (max-width: 900px) { .cas-form-grade { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .form-cas, .servicos-check { grid-template-columns: 1fr; } }
+
+/* Lightbox */
+.caixa { width: 100vw; height: 100vh; height: 100svh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgb(6 5 4 / .97); color: var(--texto); }
+.caixa::backdrop { background: rgb(6 5 4 / .97); }
+.caixa[open] { display: grid; grid-template-columns: 72px 1fr 72px; align-items: center; }
+.caixa figure { margin: 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 56px 0 24px; min-width: 0; }
+.caixa img { max-width: 100%; max-height: calc(100% - 40px); object-fit: contain; }
+.caixa figcaption { text-align: center; max-width: 60ch; padding: 0 12px; margin: 0; }
+.caixa-seta, .caixa-fechar { all: unset; cursor: pointer; color: var(--texto-suave); font: 400 26px/1 var(--fonte-texto); display: grid; place-items: center; height: 100%; transition: color .3s; }
+.caixa-seta:hover, .caixa-fechar:hover { color: var(--acento); }
+.caixa-seta:focus-visible, .caixa-fechar:focus-visible { outline: 2px solid var(--acento); outline-offset: -4px; }
+.caixa-fechar { position: absolute; top: 14px; right: var(--gutter); height: auto; padding: 10px 0; font: 500 12px/1 var(--fonte-texto); letter-spacing: .26em; text-transform: uppercase; z-index: 2; }
+@media (max-width: 600px) { .caixa[open] { grid-template-columns: 44px 1fr 44px; } }
+
+/* Revelar */
+.revelar { opacity: 0; transform: translateY(26px); transition: opacity 1.1s var(--ease), transform 1.2s var(--ease); }
+.revelar.visto { opacity: 1; transform: none; }
+html:not(.cas-js) .revelar { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .revelar { opacity: 1; transform: none; } .cas-hero-foto img { animation: none; } }
+
+.rodape--cas { padding-bottom: 96px; }

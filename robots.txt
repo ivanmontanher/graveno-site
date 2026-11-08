@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /casamentos
+Disallow: /casamentos.html
+Disallow: /assets/casamentos/
 
 Sitemap: https://graveno.com.br/sitemap.xml
