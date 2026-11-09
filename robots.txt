@@ -3,5 +3,8 @@ Allow: /
 Disallow: /casamentos
 Disallow: /casamentos.html
 Disallow: /assets/casamentos/
+Disallow: /proposta-sandubao
+Disallow: /proposta-sandubao.html
+Disallow: /assets/proposta-sandubao/
 
 Sitemap: https://graveno.com.br/sitemap.xml

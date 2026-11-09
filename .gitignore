@@ -1,1 +1,12 @@
 .DS_Store
+# Proposta Sandubão: referências e originais que não aparecem na página
+assets/proposta-sandubao/referencias/burger/
+assets/proposta-sandubao/referencias/balde/
+assets/proposta-sandubao/referencias/direcao-de-arte/*.jpg
+assets/proposta-sandubao/avaliacoes/*.png
+assets/proposta-sandubao/conteudo-atual/*.jpeg
+assets/proposta-sandubao/graveno-gastronomia/
+assets/proposta-sandubao/migous/*.jpeg
+assets/proposta-sandubao/migous/*.png
+assets/proposta-sandubao/tag/tag-nfc-original.jpeg
+assets/proposta-sandubao/avaliacoes/web/nova-europa-1.webp

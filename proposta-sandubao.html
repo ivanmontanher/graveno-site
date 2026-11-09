@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Uma proposta Graveno para o Sandubão</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="description" content="O melhor hambúrguer de Campinas não pode ser um segredo.">
+  <meta name="theme-color" content="#0E0D0B">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Graveno">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://graveno.com.br/proposta-sandubao">
+  <meta property="og:title" content="Uma proposta Graveno para o Sandubão">
+  <meta property="og:description" content="O melhor hambúrguer de Campinas não pode ser um segredo.">
+  <meta property="og:image" content="https://graveno.com.br/assets/og/proposta-sandubao-og.jpg?v=2">
+  <meta property="og:image:secure_url" content="https://graveno.com.br/assets/og/proposta-sandubao-og.jpg?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="O hambúrguer do Sandubão. Uma proposta Graveno para o Sandubão">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://graveno.com.br/assets/og/proposta-sandubao-og.jpg?v=2">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fontes/InstrumentSerif-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fontes/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js");setTimeout(function(){var h=document.documentElement;if(!h.classList.contains("app-ok"))h.classList.remove("js")},4000)</script>
+  <link rel="stylesheet" href="/estilo.css">
+  <link rel="stylesheet" href="/proposta.css">
+</head>
+<body class="prop">
+
+<!-- Peça da tag NFC, desenhada em vetor (usada nas tags 3D) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="tag-face" viewBox="0 0 400 400">
+      <rect x="0" y="0" width="400" height="400" rx="58" fill="#151513"/>
+      <rect x="20" y="20" width="360" height="360" rx="44" fill="none" stroke="#F4BF27" stroke-width="9"/>
+      <text x="200" y="104" text-anchor="middle" font-family="Bricolage Grotesque, Geist, sans-serif" font-weight="800" font-size="44" letter-spacing="5" textLength="236" lengthAdjust="spacingAndGlyphs" fill="#F3EEE2">CARDÁPIO</text>
+      <g fill="#F4BF27">
+        <circle cx="96" cy="150" r="3"/><circle cx="111" cy="150" r="3.5"/><circle cx="127" cy="150" r="4"/><circle cx="143" cy="150" r="4.5"/><circle cx="160" cy="150" r="5.2"/><circle cx="178" cy="150" r="6"/><circle cx="198" cy="150" r="7"/><circle cx="220" cy="150" r="7"/><circle cx="240" cy="150" r="6"/><circle cx="258" cy="150" r="5.2"/><circle cx="275" cy="150" r="4.5"/><circle cx="291" cy="150" r="4"/><circle cx="306" cy="150" r="3.5"/><circle cx="320" cy="150" r="3"/>
+      </g>
+      <image href="/assets/proposta-sandubao/tag/logo-sandubao.svg" x="52" y="182" width="296" height="78"/>
+      <g fill="none" stroke="#F4BF27" stroke-width="4.5" stroke-linecap="round">
+        <path d="M62 320 q6 8 0 16"/><path d="M71 313 q11 15 0 30"/><path d="M80 306 q16 22 0 44"/>
+      </g>
+      <text x="104" y="337" font-family="Bricolage Grotesque, Geist, sans-serif" font-weight="800" font-size="24" letter-spacing="1" textLength="234" lengthAdjust="spacingAndGlyphs" fill="#F3EEE2">APROXIME O CELULAR</text>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="progresso" aria-hidden="true"><span></span></div>
+<div class="grao" aria-hidden="true"></div>
+
+<header class="p-topo">
+  <a class="logo" href="https://graveno.com.br" target="_blank" rel="noopener">Gr<i>a</i>veno</a>
+  <span class="p-topo-para">para</span>
+  <img src="/assets/proposta-sandubao/tag/logo-sandubao.svg" alt="Sandubão" class="p-topo-sand">
+</header>
+
+<main>
+
+<!-- 1 · HERO: o hambúrguer se monta -->
+<section class="hero-b" id="hero" data-cena="01">
+  <div class="hero-b-palco">
+    <img class="hero-b-poster" src="/assets/proposta-sandubao/hero/poster.webp" alt="" fetchpriority="high">
+    <canvas class="hero-b-canvas" aria-hidden="true"></canvas>
+    <div class="hero-b-txt">
+      <div class="hb hb-1">
+        <img src="/assets/proposta-sandubao/tag/logo-sandubao.svg" alt="Sandubão" class="hb-logo">
+        <h1 class="hb-titulo">Sandubão.</h1>
+      </div>
+      <div class="hb hb-2"><p class="hb-frase">O melhor hambúrguer de Campinas <em>não pode ser um segredo.</em></p></div>
+      <div class="hb hb-3">
+        <p class="cred cred--sand">Uma proposta</p>
+        <p class="hb-assina"><span class="logo">Gr<i>a</i>veno</span><span class="hb-para">para o</span><img src="/assets/proposta-sandubao/tag/logo-sandubao.svg" alt="Sandubão" class="hb-logo hb-logo--p"></p>
+      </div>
+    </div>
+    <div class="dica-rolar" aria-hidden="true"><span></span>Role e monte</div>
+  </div>
+</section>
+
+<!-- 2 · A HISTÓRIA -->
+<section class="cena-p s-preto" id="historia">
+  <div class="largura">
+    <p class="cred cred--sand">A história</p>
+    <h2 class="t-grande palavras">Nada disso foi sorte. <em>Foi chapa quente, madrugada e decisão certa.</em></h2>
+    <ol class="tempo">
+      <li><span class="tempo-ano">O começo</span><h3>A chapa</h3><p>Um homem, uma chapa e a decisão de fazer o melhor lanche que conseguia.</p></li>
+      <li><span class="tempo-ano">A primeira porta</span><h3>A primeira loja</h3><p>O Sandubão ganha porta, nome e clientes que voltam.</p></li>
+      <li><span class="tempo-ano">A família</span><h3>Pai, filha e genro</h3><p>O negócio vira família. A mesma chapa, mais mãos.</p></li>
+      <li class="tempo-hoje"><span class="tempo-ano">Hoje</span><h3><span data-lojas>7</span> lojas</h3><p>Uma rede construída com as próprias mãos.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3 · O TAMANHO DO JOGO -->
+<section class="cena-p s-preto" id="tamanho">
+  <div class="largura">
+    <p class="cred cred--sand">O tamanho do jogo</p>
+    <div class="numeros">
+      <div><span class="n" data-n="7" data-lojas-n>7</span><p>lojas</p></div>
+      <div><span class="n" data-n="50000" data-mil>50.000</span><p>pedidos por mês</p></div>
+      <div><span class="n" data-n="60" data-pre="R$ ">R$ 60</span><p>de ticket médio</p></div>
+      <div><span class="n" data-n="3" data-pre="R$ " data-suf=" mi">R$ 3 mi</span><p>por mês</p></div>
+    </div>
+    <p class="t-destaque palavras">Num negócio desse tamanho, 1% não é detalhe. <em>É R$ 30 mil todo mês.</em></p>
+  </div>
+</section>
+
+<!-- 4 · O BALDE FURADO -->
+<section class="balde" id="balde">
+  <div class="balde-palco">
+    <div class="balde-cab">
+      <p class="cred balde-cred">O balde furado</p>
+      <h2 class="balde-t b1">Vocês não têm um problema de atrair cliente. <em>Têm um balde furado.</em></h2>
+      <h2 class="balde-t b2">A Graveno tampa os furos. <em>E o balde enche.</em></h2>
+    </div>
+    <div class="balde-arte">
+      <svg class="balde-svg" viewBox="0 0 600 640" role="img" aria-labelledby="balde-titulo">
+        <title id="balde-titulo">Ilustração: um balde do Sandubão recebe pedidos da torneira e vaza por seis furos. Depois, a Graveno tampa os furos e o balde enche.</title>
+        <defs>
+          <clipPath id="b-dentro"><path d="M168 236 L432 236 L404 560 L196 560 Z"/></clipPath>
+          <linearGradient id="b-agua" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ED8E8"/><stop offset="1" stop-color="#6FC1D8"/></linearGradient>
+        </defs>
+        <!-- torneira -->
+        <g class="torneira" stroke="#141412" stroke-width="5" stroke-linejoin="round">
+          <path d="M0 96 H262 a26 26 0 0 1 26 26 V152 H262 V122 H0 Z" fill="#BDB6AC"/>
+          <rect x="250" y="148" width="50" height="16" rx="5" fill="#A8A096"/>
+          <rect x="268" y="58" width="14" height="40" fill="#BDB6AC"/>
+          <path d="M236 52 h78 a8 8 0 0 1 0 16 h-78 a8 8 0 0 1 0 -16z" fill="#A8A096"/>
+        </g>
+        <text x="10" y="34" class="b-rot" font-size="20">Tráfego, iFood,</text><text x="10" y="60" class="b-rot" font-size="20">promoção, indicação</text>
+        <!-- jato principal -->
+        <rect class="jato" x="262" y="164" width="26" height="330" rx="6" fill="#8FD0E3" stroke="#141412" stroke-width="3"/>
+        <!-- poça -->
+        <path class="poca" d="M300 600 c-150 0 -250 -14 -250 -34 c0 -22 110 -36 250 -36 c150 0 250 14 250 36 c0 20 -100 34 -250 34z" fill="#9ED8E8" stroke="#141412" stroke-width="4"/>
+        <!-- água dentro do balde -->
+        <g clip-path="url(#b-dentro)"><rect class="nivel" x="150" y="560" width="300" height="400" fill="url(#b-agua)"/><path class="onda" d="M150 0 q37 -10 75 0 t75 0 t75 0 t75 0 v10 h-300z" fill="#BFE6F0" transform="translate(0 560)"/></g>
+        <!-- balde -->
+        <path d="M168 236 L432 236 L404 560 L196 560 Z" fill="#C9C2B8" fill-opacity=".72" stroke="#141412" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M156 222 h288 a8 8 0 0 1 8 8 v8 a8 8 0 0 1 -8 8 h-288 a8 8 0 0 1 -8 -8 v-8 a8 8 0 0 1 8 -8z" fill="#BDB6AC" stroke="#141412" stroke-width="5"/>
+        <image href="/assets/proposta-sandubao/tag/logo-sandubao-escuro.svg" x="214" y="300" width="172" height="46"/>
+        <!-- jatos dos furos -->
+        <g class="jatos" fill="none" stroke="#8FD0E3" stroke-width="13" stroke-linecap="round">
+          <path class="jf" data-i="0" d="M196 390 q-60 10 -92 150"/>
+          <path class="jf" data-i="1" d="M406 400 q60 10 92 140"/>
+          <path class="jf" data-i="2" d="M204 470 q-40 10 -56 86"/>
+          <path class="jf" data-i="3" d="M398 470 q40 10 56 86"/>
+          <path class="jf" data-i="4" d="M262 520 q-14 20 -28 50"/>
+          <path class="jf" data-i="5" d="M338 520 q14 20 28 50"/>
+        </g>
+        <g class="jatos-borda" fill="none" stroke="#141412" stroke-width="3" stroke-linecap="round" opacity=".55">
+          <path class="jfb" d="M196 390 q-60 10 -92 150"/><path class="jfb" d="M406 400 q60 10 92 140"/><path class="jfb" d="M204 470 q-40 10 -56 86"/><path class="jfb" d="M398 470 q40 10 56 86"/><path class="jfb" d="M262 520 q-14 20 -28 50"/><path class="jfb" d="M338 520 q14 20 28 50"/>
+        </g>
+        <!-- furos -->
+        <g class="furos" stroke="#141412" stroke-width="3" fill="#141412">
+          <path class="fu" d="M190 384 l6 -6 l4 8 l-6 6z"/><path class="fu" d="M404 394 l6 -6 l4 8 l-6 6z"/><path class="fu" d="M200 464 l6 -6 l4 8 l-6 6z"/><path class="fu" d="M392 464 l6 -6 l4 8 l-6 6z"/><path class="fu" d="M258 514 l6 -6 l4 8 l-6 6z"/><path class="fu" d="M334 514 l6 -6 l4 8 l-6 6z"/>
+        </g>
+        <!-- selos Graveno -->
+        <g class="selos">
+          <g class="se" transform="translate(196 388)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+          <g class="se" transform="translate(408 398)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+          <g class="se" transform="translate(204 468)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+          <g class="se" transform="translate(396 468)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+          <g class="se" transform="translate(262 518)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+          <g class="se" transform="translate(338 518)"><circle r="17" fill="#E8A23A" stroke="#141412" stroke-width="3"/><text y="7" text-anchor="middle" font-family="Instrument Serif, serif" font-style="italic" font-size="24" fill="#141412">a</text></g>
+        </g>
+        <!-- transbordo -->
+        <g class="transbordo" fill="#9ED8E8" stroke="#141412" stroke-width="2.5">
+          <circle cx="210" cy="214" r="7"/><circle cx="252" cy="196" r="5"/><circle cx="300" cy="186" r="8"/><circle cx="348" cy="198" r="5"/><circle cx="392" cy="212" r="7"/>
+        </g>
+      </svg>
+      <div class="balde-lado">
+        <ol class="furos-lista">
+          <li>Avaliação negativa sem resposta</li>
+          <li>Cliente que pediu uma vez e nunca voltou</li>
+          <li>Salão vazio no domingo</li>
+          <li>Conteúdo que não dá fome</li>
+          <li>Nenhuma lista de clientes para chamar de volta</li>
+          <li>Dono apagando incêndio em vez de crescer</li>
+        </ol>
+        <div class="vazando"><span class="cred">Dinheiro que fica na mesa por mês</span><strong data-vaza>R$ 0</strong><small>no cenário de 3% da calculadora</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · DOMINGO À NOITE -->
+<section class="domingo" id="domingo">
+  <div class="largura domingo-grade">
+    <p class="dom-hora palavras">Domingo, <em>21h.</em></p>
+    <button class="fone-v" data-abrir="1244977338" data-vertical data-cred="Story do Sandubão · domingo à noite" aria-label="Assistir com som: story de domingo à noite">
+      <span class="fone-v-tela video-fundo" data-vimeo="1244977338"><img class="poster" src="/assets/posters/1244977338.webp" alt="Story de domingo à noite" loading="lazy"></span>
+      <span class="cred">Toque para ouvir</span>
+    </button>
+    <div class="dom-texto">
+      <p>Quando alguém da equipe precisa ir para a frente da câmera pedir para o cliente aparecer, o problema não é a pessoa. <em>É a falta de um sistema.</em></p>
+      <p class="dom-final">Com a Graveno, o domingo enche antes de começar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · O CONTEÚDO NO AR HOJE -->
+<section class="cena-p" id="no-ar">
+  <div class="largura">
+    <p class="cred cred--acento">O conteúdo que está no ar hoje</p>
+    <h2 class="t-grande palavras">Cada vídeo no ar é a marca de vocês falando. <em>Hoje ela está falando baixo e com ruído.</em></h2>
+    <div class="tres-fones tres-fones--atual">
+      <figure>
+        <button class="celular" data-abrir="1244978947" data-vertical data-cred="Conteúdo atual 1" aria-label="Assistir com som: conteúdo atual 1"><span class="celular-tela video-fundo" data-vimeo="1244978947"><img class="poster" src="/assets/posters/1244978947.webp" alt="" loading="lazy"></span></button>
+        <figcaption><ul class="diag"><li>Ruído de fundo constante no áudio</li><li>Sem o produto em cena nos primeiros segundos</li><li>24 segundos de fala direta, sem gancho visual</li></ul></figcaption>
+      </figure>
+      <figure>
+        <button class="celular" data-abrir="1244979053" data-vertical data-cred="Conteúdo atual 2" aria-label="Assistir com som: conteúdo atual 2"><span class="celular-tela video-fundo" data-vimeo="1244979053"><img class="poster" src="/assets/posters/1244979053.webp" alt="" loading="lazy"></span></button>
+        <figcaption><ul class="diag"><li>O lanche fica na borda do quadro</li><li>A piada ocupa o lugar da fome</li><li>Efeitos prontos de edição</li></ul></figcaption>
+      </figure>
+      <figure>
+        <button class="celular" data-abrir="1244979229" data-vertical data-cred="Conteúdo atual 3" aria-label="Assistir com som: conteúdo atual 3"><span class="celular-tela video-fundo" data-vimeo="1244979229"><img class="poster" src="/assets/posters/1244979229.webp" alt="" loading="lazy"></span></button>
+        <figcaption><ul class="diag"><li>Luz fria de cozinha, sem direção de luz</li><li>Um corte por segundo, sem respiro para o lanche</li></ul></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · ANTES E DEPOIS -->
+<section class="cena-p s-preto" id="antes-depois">
+  <div class="largura">
+    <p class="cred cred--sand">Antes e depois</p>
+    <h2 class="t-grande palavras">Hambúrguer não se vende com foto. <em>Se vende com fome.</em></h2>
+    <div class="ads">
+      <div class="ad" style="--corte: 50%">
+        <div class="ad-camada ad-depois"><img src="/assets/proposta-sandubao/referencias/direcao-de-arte/web/ref-2.webp" alt="Hambúrguer com cogumelos e queijo derretendo, segurado com as duas mãos" loading="lazy"><span class="ad-rot cred cred--acento">O padrão que vamos produzir para vocês</span></div>
+        <div class="ad-camada ad-antes"><img src="/assets/proposta-sandubao/conteudo-atual/web/story-domingo.webp" alt="Story atual do Sandubão" loading="lazy"><span class="ad-rot cred">Hoje</span></div>
+        <button class="ad-alca" role="slider" aria-label="Arraste para comparar hoje e o padrão que vamos produzir" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+      </div>
+      <div class="ad" style="--corte: 50%">
+        <div class="ad-camada ad-depois"><img src="/assets/proposta-sandubao/referencias/direcao-de-arte/web/ref-4.webp" alt="Hambúrguer com bacon segurado na frente do rosto" loading="lazy"><span class="ad-rot cred cred--acento">O padrão que vamos produzir para vocês</span></div>
+        <div class="ad-camada ad-antes"><img src="/assets/proposta-sandubao/conteudo-atual/web/story-friozinho.webp" alt="Story atual do Sandubão" loading="lazy"><span class="ad-rot cred">Hoje</span></div>
+        <button class="ad-alca" role="slider" aria-label="Arraste para comparar hoje e o padrão que vamos produzir" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+      </div>
+    </div>
+    <p class="cred ad-dica">Arraste para comparar · Direção de arte de referência</p>
+    <div class="criativo">
+      <div class="criativo-txt">
+        <h3 class="t-sub">Criativo que <em>para o dedo.</em></h3>
+        <p class="criativo-p">Antes de vender, um vídeo precisa ser visto. A gente roteiriza o gancho dos 3 primeiros segundos, ilumina a comida para dar fome, grava com som limpo e edita no ritmo do feed. Cada criativo nasce para um objetivo: encher o salão, vender no delivery ou fazer o cliente voltar.</p>
+        <ul class="criativo-lista">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Gancho nos 3 primeiros segundos</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg>Luz e textura que dão fome</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Feito para anúncio e para o feed</li>
+        </ul>
+      </div>
+      <div class="criativo-cels celulares">
+        <button class="celular" data-abrir="1244891232" data-vertical data-cred="Graveno · Criativo de gastronomia" aria-label="Assistir com som: criativo Graveno 1"><span class="celular-tela video-fundo" data-vimeo="1244891232"><img class="poster" src="/assets/posters/1244891232.webp" alt="" loading="lazy"></span></button>
+        <button class="celular" data-abrir="1244891780" data-vertical data-cred="Graveno · Criativo de gastronomia" aria-label="Assistir com som: criativo Graveno 2"><span class="celular-tela video-fundo" data-vimeo="1244891780"><img class="poster" src="/assets/posters/1244891780.webp" alt="" loading="lazy"></span></button>
+        <button class="celular" data-abrir="1244892240" data-vertical data-cred="Graveno · Criativo de gastronomia" aria-label="Assistir com som: criativo Graveno 3"><span class="celular-tela video-fundo" data-vimeo="1244892240"><img class="poster" src="/assets/posters/1244892240.webp" alt="" loading="lazy"></span></button>
+      </div>
+    </div>
+    <p class="cred ad-dica">Toque num celular para ouvir</p>
+  </div>
+</section>
+
+<!-- 8 · REPUTAÇÃO -->
+<section class="cena-p" id="reputacao">
+  <div class="largura">
+    <p class="cred cred--acento">Reputação</p>
+    <h2 class="t-grande palavras">Cada avaliação sem resposta é um cliente falando com o próximo. <em>E vocês não estão na conversa.</em></h2>
+    <div class="rep-contador"><strong><span class="n" data-n="104">104</span></strong><span>avaliações negativas sem resposta do proprietário, encontradas no Google em 09/11/2026, somando as lojas da rede.</span></div>
+    <table class="notas">
+      <caption class="cred">Nota no Google por loja · consulta em 09/11/2026</caption>
+      <tbody>
+          <tr><td>Nova Europa</td><td>4,5 ★</td><td>1.456 avaliações</td></tr>
+          <tr><td>Ouro Verde</td><td>4,0 ★</td><td>478 avaliações</td></tr>
+          <tr><td>Americana</td><td>4,3 ★</td><td>279 avaliações</td></tr>
+          <tr><td>Sorocaba</td><td>4,1 ★</td><td>79 avaliações</td></tr>
+          <tr><td>Itavuvu, Sorocaba</td><td>4,1 ★</td><td>50 avaliações</td></tr>
+          <tr><td>Mega Sandubão, Taquaral</td><td>3,5 ★</td><td>119 avaliações</td></tr>
+          <tr><td>Piracicaba</td><td>3,6 ★</td><td>31 avaliações</td></tr>
+      </tbody>
+    </table>
+    <div class="mosaico">
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/nova-europa-2.webp" alt="Avaliação negativa sem resposta, loja Nova Europa" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Nova Europa</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/taquaral-1.webp" alt="Avaliação negativa sem resposta, loja Taquaral" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Taquaral</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/ouro-verde-1.webp" alt="Avaliação negativa sem resposta, loja Ouro Verde" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Ouro Verde</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/americana-1.webp" alt="Avaliação negativa sem resposta, loja Americana" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Americana</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/piracicaba-1.webp" alt="Avaliação negativa sem resposta, loja Piracicaba" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Piracicaba</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/sorocaba-1.webp" alt="Avaliação negativa sem resposta, loja Sorocaba" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Sorocaba</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/itavuvu-1.webp" alt="Avaliação negativa sem resposta, loja Itavuvu" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Itavuvu</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/taquaral-2.webp" alt="Avaliação negativa sem resposta, loja Taquaral" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Taquaral</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/ouro-verde-2.webp" alt="Avaliação negativa sem resposta, loja Ouro Verde" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Ouro Verde</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/nova-europa-3.webp" alt="Avaliação negativa sem resposta, loja Nova Europa" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Nova Europa</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/sorocaba-2.webp" alt="Avaliação negativa sem resposta, loja Sorocaba" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Sorocaba</span></figure>
+        <figure><img src="/assets/proposta-sandubao/avaliacoes/web/piracicaba-2.webp" alt="Avaliação negativa sem resposta, loja Piracicaba" loading="lazy"><figcaption>Sem resposta do proprietário</figcaption><span class="loja">Piracicaba</span></figure>
+    </div>
+    <p class="aviso">Prints do Google Maps. Nome e foto de quem avaliou foram desfocados.</p>
+  </div>
+</section>
+
+<!-- 8b · O TRUNFO -->
+<section class="cena-p s-preto" id="trunfo">
+  <div class="largura">
+    <p class="cred cred--sand">O trunfo</p>
+    <h2 class="t-grande palavras">Não é sobre ser o melhor. <em>É sobre ter estratégia.</em></h2>
+    <p class="t-medio">Em Campinas, uma hamburgueria que começou depois de vocês, pequena e só no delivery, decidiu cuidar da reputação online. Hoje ela tem nota 5,0 no Google com mais de 2.300 avaliações. <em>É uma das mais bem avaliadas da cidade.</em></p>
+    <div class="trunfo-cards">
+      <article class="migous"><span class="cred">Migous Burger · 1 loja</span><strong>5,0</strong><span class="estrelas">★★★★★</span><small>2.364 avaliações no Google</small></article>
+      <article><span class="cred">Sandubão · <span data-lojas>7</span> lojas</span><strong>4,3</strong><span class="estrelas">★★★★☆</span><small>2.492 avaliações somando as lojas (média ponderada)</small></article>
+    </div>
+    <figure class="trunfo-print"><img src="/assets/proposta-sandubao/migous/migous-maps.webp" alt="Painel do Google Maps da Migous Burger com nota 5,0 e 2.364 avaliações" loading="lazy"><figcaption>Google Maps · Migous Burger, Av. Arymana, 804, Campinas · consulta em 09/11/2026</figcaption></figure>
+    <p class="t-destaque">O Sandubão tem mais lojas, mais história e mais clientes. Só não está fazendo a coisa certa com a reputação. <em>E é exatamente isso que a Graveno faz.</em></p>
+  </div>
+</section>
+
+<!-- 9 · A EVIDÊNCIA -->
+<section class="cena-p" id="evidencia">
+  <div class="largura">
+    <p class="cred cred--acento">A evidência</p>
+    <h2 class="t-grande palavras">Não é opinião. <em>É pesquisa.</em></h2>
+    <div class="evid">
+      <article><span class="n" data-n="9" data-pre="5 a " data-suf="%">5 a 9%</span><p>a mais de receita para cada estrela a mais. O efeito maior é nos restaurantes independentes.</p><a href="https://www.library.hbs.edu/working-knowledge/the-yelp-factor-are-consumer-reviews-good-for-business" target="_blank" rel="noopener">Harvard Business School · Luca, 2011</a></article>
+      <article><span class="n" data-n="19" data-pre="+" data-suf=" p.p.">+19 p.p.</span><p>na chance de lotar no horário de pico, de 3,5 para 4 estrelas.</p><a href="https://news.berkeley.edu/2012/09/04/yelp-reviews-boost-restaurant-business/" target="_blank" rel="noopener">UC Berkeley · Anderson e Magruder, The Economic Journal, 2012</a></article>
+      <article><span class="n" data-n="25" data-pre="5 a " data-suf="x">5 a 25x</span><p>mais caro conquistar um cliente novo do que manter um que já compra.</p><a href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers" target="_blank" rel="noopener">Harvard Business Review · Gallo, 2014</a></article>
+      <article><span class="n" data-n="95" data-pre="25 a " data-suf="%">25 a 95%</span><p>a mais de lucro com 5% a mais na taxa de retenção.</p><a href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers" target="_blank" rel="noopener">Reichheld, Bain &amp; Company, na HBR, 2014</a></article>
+      <article><span class="n" data-n="12" data-pre="+" data-suf="%">+12%</span><p>de avaliações e +0,12 estrela para quem passa a responder. Estudo com hotéis.</p><a href="https://econpapers.repec.org/RePEc:inm:ormksc:v:36:y:2017:i:5:p:645-665" target="_blank" rel="noopener">Proserpio e Zervas · Marketing Science, 2017</a></article>
+      <article><span class="n" data-n="63" data-suf="%">63%</span><p>dos consumidores decidem pelas avaliações de outros clientes.</p><a href="https://foodbiz.com.br/negocios/avaliacoes-google-impacto-bares-restaurantes-brasil/" target="_blank" rel="noopener">Abrasel e Reclame Aqui · Foodbiz, 2025</a></article>
+      <article><span class="n" data-n="52" data-suf="%">52%</span><p>desistem de pedir em restaurante com avaliação ruim nas plataformas de delivery.</p><a href="https://institucional.ifood.com.br/institucional/ifood-preferido-delivery/" target="_blank" rel="noopener">Opinion Box, 2023 · via iFood</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · A MESA QUE VENDE -->
+<section class="mesa" id="mesa">
+  <div class="mesa-palco">
+    <div class="mesa-txt">
+      <p class="cred cred--sand">A mesa que vende</p>
+      <h2 class="t-grande">Uma mesa, <em>um toque.</em></h2>
+      <p class="mesa-sub">Cardápio, avaliação 5 estrelas, Instagram e a próxima visita. Tudo num toque do celular na tag da mesa, no momento em que o cliente está com o hambúrguer na mão.</p>
+    </div>
+    <div class="mesa-cena" aria-hidden="true">
+      <div class="tag3d tag-a"><div class="tag-corpo"><svg class="tag-frente"><use href="#tag-face"/></svg><div class="tag-brilho"></div><div class="tag-tras"></div></div></div>
+      <div class="tag3d tag-b"><div class="tag-corpo"><svg class="tag-frente"><use href="#tag-face"/></svg><div class="tag-brilho"></div><div class="tag-tras"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · A CALCULADORA -->
+<section class="cena-p" id="calculadora">
+  <div class="largura">
+    <p class="cred cred--acento">O dinheiro na mesa</p>
+    <h2 class="t-grande palavras">A pergunta não é quanto custa a Graveno. <em>É quanto custa continuar sem ela.</em></h2>
+    <div class="conta-padaria">
+      <h3 class="cp-tit">Quanto precisa para a Graveno se pagar?</h3>
+      <ol class="cp-passos">
+        <li><span>O investimento na Graveno é de</span><strong><span class="n" data-n="35377" data-pre="R$ " data-mil>R$ 35.377</span> por mês.</strong></li>
+        <li><span>Com um ticket médio de R$ 60, isso equivale a</span><strong><span class="n" data-n="590" data-mil>590</span> pedidos por mês.</strong></li>
+        <li><span>Isso dá</span><strong><span class="n" data-n="20">20</span> pedidos por dia, somando todas as lojas.</strong></li>
+        <li><span>Ou cerca de</span><strong><span data-por-loja>2,8</span> pedidos a mais por loja, por dia.</strong></li>
+      </ol>
+      <p class="t-destaque cp-frase">Hoje vocês fazem 50 mil pedidos por mês. <em>A Graveno se paga com 20 pedidos a mais por dia.</em></p>
+    </div>
+    <div class="se-der">
+      <h3 class="cp-tit">E se der certo?</h3>
+      <div class="se-cards">
+        <article><span class="cred">1% a mais de pedidos</span><strong>+ R$ 30.000</strong><small>por mês</small><div class="barras"><i class="b-inv" style="--w:23.6%"></i><i class="b-ret" style="--w:20%"></i></div><p>Praticamente paga o investimento.</p></article>
+        <article><span class="cred">3% a mais de pedidos</span><strong>+ R$ 90.000</strong><small>por mês</small><div class="barras"><i class="b-inv" style="--w:23.6%"></i><i class="b-ret" style="--w:60%"></i></div><p>Volta 2,5 vezes o que vocês investem.</p></article>
+        <article class="forte"><span class="cred">5% a mais de pedidos · o piso do estudo de Harvard para 1 estrela a mais</span><strong>+ R$ 150.000</strong><small>por mês</small><div class="barras"><i class="b-inv" style="--w:23.6%"></i><i class="b-ret" style="--w:100%"></i></div><p>Volta mais de 4 vezes o que vocês investem.</p></article>
+      </div>
+      <p class="barras-leg"><span class="lg-inv"></span>Investimento R$ 35.377 <span class="lg-ret"></span>Receita a mais</p>
+    </div>
+    <div class="faca">
+      <h3>Faça a sua conta</h3>
+      <label>Quantos pedidos a mais por dia? <output data-o="dia">20</output><input type="range" id="c-dia" min="0" max="200" step="1" value="20"></label>
+      <p class="faca-res" data-r="faca"></p>
+      <p class="conta">Salão no domingo: <span data-r="dom"></span></p>
+    </div>
+    <p class="aviso">Projeções ilustrativas com base nos números informados e em estudos de mercado. Não são garantia de resultado.</p>
+  </div>
+</section>
+
+<!-- 12 · O TEMPO DE QUEM CONSTRUIU -->
+<section class="cena-p s-preto" id="tempo">
+  <div class="largura tempo-grade">
+    <div>
+      <p class="cred cred--sand">O tempo de quem construiu</p>
+      <h2 class="t-grande palavras">Quem construiu o negócio não deveria passar a noite revisando post. <em>O marketing mais caro é o que você paga e ainda tem que fazer junto.</em></h2>
+    </div>
+    <div class="bloco">
+      <label>Quanto vale uma hora de quem é dono? <output data-o="hora">R$ 300</output><input type="range" id="c-hora" min="100" max="1000" step="10" value="300"></label>
+      <label>Horas por semana revisando marketing <output data-o="horas">10 h</output><input type="range" id="c-horas" min="1" max="40" step="1" value="10"></label>
+      <p class="tempo-total"><strong data-r="tempo">R$ 12.990</strong><span>por mês, em tempo que deveria ser da família e da estratégia.</span></p>
+      <p class="conta" data-r="tempoConta"></p>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · O QUE A GRAVENO FAZ -->
+<section class="cena-p" id="plano">
+  <div class="largura">
+    <p class="cred cred--acento">O que a Graveno faz nas <span data-lojas>7</span> lojas</p>
+    <h2 class="t-grande palavras">Vocês cuidam do hambúrguer. <em>A gente cuida de o mundo inteiro saber dele.</em></h2>
+    <ol class="plano">
+      <li><h3>Reputação e Google</h3><p>Todas as avaliações respondidas, perfis otimizados e avaliações positivas chegando todo dia.</p></li>
+      <li><h3>Tags NFC nas mesas</h3><p>Cardápio digital, avaliação, Instagram e a próxima visita num toque.</p></li>
+      <li><h3>Captação mensal em todas as lojas</h3><p>Foto, vídeo e storymaker com direção de arte. Drone quando fizer sentido.</p></li>
+      <li><h3>Social media</h3><p>Calendário, roteiro, legenda e publicação. O Instagram principal e o das lojas.</p></li>
+      <li><h3>Tráfego para delivery e salão</h3><p>Por loja e por raio, com criativo novo em teste o tempo todo.</p></li>
+      <li><h3>Fidelização e recompra</h3><p>Base no WhatsApp, campanhas de volta, aniversariantes e domingo cheio.</p></li>
+      <li><h3>Relatório e uma reunião por mês</h3><p>Um relatório claro e uma única reunião de uma hora. Ninguém microgerencia nada.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 14 · 90 DIAS -->
+<section class="cena-p s-preto" id="noventa">
+  <div class="largura">
+    <p class="cred cred--sand">Os primeiros 90 dias</p>
+    <ol class="dias">
+      <li><span class="dias-n">1 a 30</span><h3>Estancar o vazamento</h3><p>Avaliações respondidas, Google otimizado, tags nas mesas e primeira captação em todas as lojas.</p></li>
+      <li><span class="dias-n">31 a 60</span><h3>Fazer barulho</h3><p>Linha editorial no ar e criativos rodando.</p></li>
+      <li><span class="dias-n">61 a 90</span><h3>Fazer voltar</h3><p>Recompra, domingo cheio e metas do semestre.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 15 · O INVESTIMENTO -->
+<section class="cena-p" id="investimento">
+  <div class="largura">
+    <p class="cred cred--acento">O investimento</p>
+    <table class="inv">
+      <tbody>
+        <tr><td>Reputação e Google</td><td>R$ 4.380</td></tr>
+        <tr><td>Captação mensal nas lojas</td><td>R$ 13.290</td></tr>
+        <tr><td>Social media, roteiro e edição</td><td>R$ 7.420</td></tr>
+        <tr><td>Gestão de tráfego</td><td>R$ 5.640</td></tr>
+        <tr><td>Fidelização e recompra <small>WhatsApp</small></td><td>R$ 3.270</td></tr>
+        <tr><td>Tags NFC e cardápio digital <small>operação e atualização</small></td><td>R$ 1.377</td></tr>
+      </tbody>
+      <tfoot><tr><td>Total por mês</td><td><span class="n" data-n="35377" data-pre="R$ " data-mil>R$ 35.377</span></td></tr></tfoot>
+    </table>
+    <p class="inv-conta">R$ 35.377 ÷ <span data-lojas>7</span> lojas = <strong data-inv-loja>R$ 5.053,86 por loja</strong>. R$ 35.377 ÷ R$ 3.000.000 = <strong>1,18% do faturamento mensal</strong>.</p>
+    <p class="t-destaque">Se a Graveno trouxer 1,18% de crescimento, o trabalho se paga. <em>Tudo o que vier acima disso é lucro.</em></p>
+    <p class="inv-nota">Contrato mínimo de 6 meses. Verba de anúncio paga à parte, direto às plataformas.</p>
+    <p class="aviso">Escopo modular. Podemos começar por fases e ajustar juntos.</p>
+  </div>
+</section>
+
+<!-- 16 · POR QUE A GRAVENO -->
+<section class="cena-p s-preto" id="porque">
+  <div class="largura">
+    <p class="cred cred--sand">Por que a Graveno</p>
+    <h2 class="t-grande palavras">A gente não cobra hora de gravação. <em>A gente entrega resultado.</em></h2>
+    <ul class="provas">
+      <li><h3>O cardápio digital e a tag do Sandubão</h3><p>Feitos antes de qualquer contrato.</p></li>
+      <li><h3>Padrão de gastronomia</h3><p>Foto e criativo que dão fome, como você viu acima.</p></li>
+      <li><h3>O nosso jeito</h3><p>Chegamos antes. Prazo combinado por escrito. Sem surpresa.</p></li>
+    </ul>
+    <p class="t-destaque">A gente chegou com o trabalho pronto antes de ser contratado. <em>Imagina depois.</em></p>
+  </div>
+</section>
+
+<!-- 17 · CTA FINAL -->
+<section class="final" id="final">
+  <div class="final-palco">
+    <img class="final-burger" src="/assets/proposta-sandubao/hero/final.webp" alt="O hambúrguer do Sandubão pronto">
+    <div class="final-txt largura">
+      <h2 class="t-grande">Vamos tampar <em>o balde?</em></h2>
+      <div class="acoes">
+        <a class="botao" data-wa="proposta_sandubao_agendar" href="https://wa.me/5519993163220?text=Oi%2C%20Ivan%21%20Vi%20a%20proposta%20da%20Graveno%20para%20o%20Sandub%C3%A3o%20e%20quero%20agendar%20a%20apresenta%C3%A7%C3%A3o.%20Origem%3A%20proposta_sandubao_agendar" target="_blank" rel="noopener">Agendar a apresentação da proposta</a>
+        <a class="botao botao--linha" data-wa="proposta_sandubao_duvida" href="https://wa.me/5519993163220?text=Oi%2C%20Ivan%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20proposta%20do%20Sandub%C3%A3o.%20Origem%3A%20proposta_sandubao_duvida" target="_blank" rel="noopener">Tirar uma dúvida agora</a>
+      </div>
+      <p class="final-frase">Existe um Sandubão antes <em>e um depois da Graveno.</em></p>
+      <p class="cred">Proposta válida por 15 dias · até 23/11/2026</p>
+    </div>
+  </div>
+</section>
+
+<section class="refs" id="referencias">
+  <div class="largura">
+    <p class="cred">Referências</p>
+    <ol>
+      <li>Luca, M. (2011). Reviews, Reputation, and Revenue: The Case of Yelp.com. HBS Working Paper 12-016. <a href="https://www.library.hbs.edu/working-knowledge/the-yelp-factor-are-consumer-reviews-good-for-business" target="_blank" rel="noopener">HBS Working Knowledge</a></li>
+      <li>Anderson, M.; Magruder, J. (2012). Learning from the Crowd. The Economic Journal, 122(563). <a href="https://news.berkeley.edu/2012/09/04/yelp-reviews-boost-restaurant-business/" target="_blank" rel="noopener">UC Berkeley News</a></li>
+      <li>Gallo, A. (2014). The Value of Keeping the Right Customers. <a href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers" target="_blank" rel="noopener">Harvard Business Review</a></li>
+      <li>Proserpio, D.; Zervas, G. (2017). Online Reputation Management. Marketing Science, 36(5). <a href="https://econpapers.repec.org/RePEc:inm:ormksc:v:36:y:2017:i:5:p:645-665" target="_blank" rel="noopener">RePEc</a></li>
+      <li>Abrasel e Reclame Aqui. Avaliações no Google e bares e restaurantes. <a href="https://foodbiz.com.br/negocios/avaliacoes-google-impacto-bares-restaurantes-brasil/" target="_blank" rel="noopener">Foodbiz, 2025</a></li>
+      <li>Opinion Box (2023), mais de 2.000 entrevistas com usuários de apps de entrega. <a href="https://institucional.ifood.com.br/institucional/ifood-preferido-delivery/" target="_blank" rel="noopener">iFood Institucional</a></li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape-p">
+  <div class="largura"><a class="logo" href="https://graveno.com.br" target="_blank" rel="noopener">Gr<i>a</i>veno</a><p class="cred">O instante antes da memória · graveno.com.br</p></div>
+</footer>
+
+<dialog class="sala" aria-label="Vídeo"><button class="sala-fechar" aria-label="Fechar vídeo">Fechar</button><div class="sala-tela"></div><p class="cred sala-cred"></p></dialog>
+
+<script>window.LOJAS = 7; window.HERO_QUADROS = { d: 150, m: 110 };</script>
+<script src="/vendor/gsap.min.js" defer></script>
+<script src="/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/vendor/lenis.min.js" defer></script>
+<script src="/proposta.js" defer></script>
+</body>
+</html>
